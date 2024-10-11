@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { LoaderCircle } from 'lucide-react';
 
-const Home = lazy(() => import('@/pages/Home'));
-const Email = lazy(() => import('@/pages/Email'));
+const Login = lazy(() => import('@/pages/Login'));
+const Dashboard = lazy(() => import('@/pages/Dashboard'));
 
 function AppRoutes() {
   return (
@@ -14,8 +14,8 @@ function AppRoutes() {
         </div>
       }>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/email" element={<Email />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Suspense>
     </Router>
