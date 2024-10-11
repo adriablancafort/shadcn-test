@@ -1,15 +1,12 @@
-import { DatePicker } from "@/components/DatePicker.tsx"
-import { CardWithForm } from "@/components/CardWithForm.tsx"
-import { Chart } from "@/components/Chart.tsx"
-import { PaginationComponent } from "@/components/PaginationComponent.tsx"
+import { ThemeProvider } from "@/components/theme-provider"
+import Home from "@/components/Home.tsx"
 
-export default function Home() {
+function App() {
   return (
-    <div>
-      <DatePicker />
-      <CardWithForm />
-      <Chart />
-      <PaginationComponent />
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Home />
+    </ThemeProvider>
   )
 }
+
+export default App
