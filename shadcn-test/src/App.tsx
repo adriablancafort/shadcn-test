@@ -1,10 +1,10 @@
 import { ThemeProvider } from "@/components/theme-provider"
-import Home from "@/components/Home"
+import AppRoutes from "@/routes"
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Home />
+      <AppRoutes />
     </ThemeProvider>
   )
 }
